@@ -179,7 +179,7 @@ frameset{
     }
     #me{
         padding-top: 4pc;
-        opacity: 100;
+        display: block;
         font-size: 21px;
     }
       
@@ -275,8 +275,8 @@ frameset{
     .gallery {
         /* box-sizing: border-box; */
         /* width: 20%; */
-        left: 16pc;
-        bottom: 34%;
+        left: 19%;
+        bottom: 33%;
         position: absolute;
         display: flex;
     }
@@ -332,8 +332,8 @@ frameset{
                     }
                 .boxes{
                     position: absolute;
-                    right: 12pc;
-                    bottom: 11pc;
+                    right: 5%;
+                    bottom: 15%;
                     display: flex;
                     opacity: 70%;
                     flex-direction: column;
@@ -342,7 +342,7 @@ frameset{
                     .rightPics{
                         width: 80px;
                         border-radius: 13px;
-                    margin-bottom: 42px;
+                        margin-bottom: 42px;
                     }
                     .third{
                         /* left: 1270px;
@@ -361,7 +361,7 @@ frameset{
                     .digital{
                         width: 140px;
                         bottom: 270px;
-                        left: 540px;
+                        left: 36%;
                         border-top-left-radius: 6pc;
                         border-bottom-right-radius: 9pc; 
                     }
@@ -384,7 +384,7 @@ frameset{
         /* background-color: #dfbf3c; */
         width: 600px;
         position: absolute;
-        right: 15pc;
+        right: 15%;
         bottom: 26pc;
         color: #4f3d31;
         /* margin-left: 500px; */
@@ -518,22 +518,21 @@ footer{
   .gmail p {
     margin-left: 1pc;
   }
-
-.toTop{
-    
+.TopSection{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
-.top {
+.toTop{
+    justify-self: center; 
+    display: flex;
+    justify-content: center ;
+    /* position: absolute; */
     background-color: #2f241e;
-    /* color: aliceblue; */
     width: 250px;
     padding: 19px;
-    position: absolute;
-    border-radius: 3pc;
-    right: 600px;   
-    bottom: 110px;
-  }
-
-
+    border-radius: 3pc; 
+}   
   /* ----------------- About page-------------- */
 
  /* -------------- Responsive -------------- */
@@ -651,11 +650,16 @@ footer{
         height: 25px;
         margin-right: -92px;
     }
+
+    .functions {
+        height: 300px;
+        width: 500px;
+    }
     .tab-content{ /* under li */
         font-size: 14px;
         width: 320px;
         height: 270px;
-        margin-top: 3%;
+        margin-top: 1%;
         margin-left:9%;
     }
     #me {
@@ -670,44 +674,27 @@ footer{
         top: 712px;
 
     }
-    .pics{
-        margin: 2%;
-        width: 30px;   
-        border-radius: 8px ;
-        
+
+
+    .gallery{
+        bottom: 31%;
+    }.gallery2{
+        bottom:23.79% ;
     }
-        .a{
-            /* border-bottom-left-radius: 40px; */
-            border-top-right-radius: 40px;
-            margin-left:-1pc ;
-            margin-right: 7px;
-        }
-        .b{
-            border-bottom-left-radius: 40px;
-            border-top-right-radius: 30pc;
-            margin-top: 18px;
-        }
-        .c{
-            border-bottom-right-radius: 40px;
-            border-bottom-left-radius: 30pc;
-            border-top-right-radius: 4pc;
-            margin-top: -10px;
-            margin-right: 6px;
-        }
-        .d{
-            border-bottom-right-radius:6pc;
-            border-top-right-radius: 20px;
-        }
+    
+    .pics{
+        width:100px;    
+    }
         .smallPics{
                 width: 60px;
                 box-shadow: 1px 1px 10px  #000000a3;
             }
             .boxes{
-                right: 12pc;
-                bottom: 11pc;
+                right: 12%;
+                bottom: 15%;
             }
                 .rightPics{
-                    width: 40px;
+                    width: 60px;
                     border-radius: 13px;
                     margin-bottom: 42px;
                 }
@@ -717,10 +704,10 @@ footer{
                     /* border-top-left-radius:4pc;
                     border-bottom-right-radius: 4pc; */
                 }
-                .fourth{
+                /* .fourth{
                     border-bottom-left-radius: 4pc;
                     border-top-right-radius: 8pc;
-                    /* border-radius: 9px; */
+                    border-radius: 9px;
                     bottom: 480px;
                     width: 130px;
                     left: 545px;
@@ -746,7 +733,7 @@ footer{
                     bottom: 15pc;
                     left: 27%;
                     rotate: 10deg;
-                }
+                } */
 
                 .info{
                     width: 250px;
@@ -766,19 +753,41 @@ footer{
                 }
 
 /* ------------------- --------------------- */
+            
+            .content2{
+                margin-left: 0%;
+                margin-right: 0%;
+                
+            }
+        
+            /* .content22{
+                position: absolute;
+                bottom: 100px;
+            } */
             .projects{
+                
                 bottom: 600px;
-                margin-left:2% ;
-                margin-right: 2%;
+                width: 100%;
+        
             }
-            .proj img{
-                width: 600px;
+                .proj img{
+                    width: 100%;
+                }
+                .info2{
+                    bottom: 16pc;
+                    right: 1pc;
+                }
+            .overlayProj{
+                position: absolute;
+                width: 100%;
+                height: 500px;
+                
+                /* right: 13pc; */
+                bottom: -3pc;
+                background-image: linear-gradient( 180deg, transparent 40%, rgba(23, 22, 21, 0.579)  41% 60%, transparent 99%);
+                -webkit-mask:linear-gradient(transparent, rgba(23,22,21,0.5159313725490196));
+                        mask:linear-gradient(transparent, rgba(23,22,21,0.5159313725490196));;
             }
-            .info2{
-                bottom: 16pc;
-                right: 1pc;
-            }
-
 /* ------------------ ----------------------- */
 
     .socials{
@@ -818,4 +827,8 @@ footer{
         opacity: 0;
         position: absolute;
     }
+    .toTop{
+        bottom: 6%; 
+    }
 }
+

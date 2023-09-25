@@ -6,7 +6,7 @@ const tabs = document.querySelectorAll('[data-tab-target]');
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       const target = document.querySelector(tab.dataset.tabTarget);
-      tabContents.forEach(tabContent => {
+      tabContents.forEach(tabContent => { 
         tabContent.classList.remove('active');
       });
       tabs.forEach(tab => {
@@ -17,10 +17,10 @@ const tabs = document.querySelectorAll('[data-tab-target]');
     });
   });
 
-// --------------------   PERSONAL INFO TAB JS      -------------------------------
+// --------------------   PERSONAL INFO TAB JS    -------------------------------
 
 
-// --------------------   hobby section ext back function  JS      ----------------------------
+// --------------------   hobby section ext back function  JS    ----------------------------
 
 
   const contents = document.querySelectorAll('.content');
